@@ -1,8 +1,6 @@
 // vue.config.js 配置说明
 // 这里只列一部分，具体配置惨考文档啊
 const path = require("path");
-const https = require('https')
-const fs = require('fs')
 require("babel-polyfill");
 
 function resolve(dir) {
@@ -67,10 +65,6 @@ module.exports = {
         target: "<other_url>"
       }
     }, // 配置多个代理
-    https: {
-      key: fs.readFileSync(path.join(__dirname, './cert/privatekey.pem')),
-      cert: fs.readFileSync(path.join(__dirname, './cert/certificate.pem'))
-    }
   },
   configureWebpack: config => {
     // 入口文件
