@@ -1,0 +1,105 @@
+{
+  "name": "cloudBox_H5",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "core-js": "^2.6.5",
+    "postcss-pxtorem": "^4.0.1",
+    "vant": "^2.0.8",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.7.0",
+    "@vue/cli-plugin-eslint": "^3.7.0",
+    "@vue/cli-service": "^3.7.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-import": "^1.12.0",
+    "babel-polyfill": "^6.26.0",
+    "css-loader": "^0.28.11",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "uglifyjs-webpack-plugin": "^2.1.2",
+    "vue-loader": "^15.7.0",
+    "vue-template-compiler": "^2.5.21"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "@vue/prettier"
+    ],
+    "rules": {
+      "no-console": 0,
+      "no-debugger": 0,
+      "no-invalid-regexp": 2,
+      "no-invalid-this": 2,
+      "no-inline-comments": 0,
+      "no-lonely-if": 0,
+      "no-multiple-empty-lines": [
+        1,
+        {
+          "max": 2
+        }
+      ],
+      "no-obj-calls": 0,
+      "no-path-concat": 0,
+      "no-plusplus": 0,
+      "no-redeclare": 2,
+      "no-unused-vars": [
+        0,
+        {
+          "vars": "all",
+          "args": "after-used"
+        }
+      ],
+      "no-var": 0,
+      "spaced-comment": 1,
+      "no-proto": 0,
+      "no-sync": 0,
+      "no-shadow": 2,
+      "no-dupe-args": 2,
+      "no-undef-init": 0,
+      "no-undefined": 0,
+      "init-declarations": 0,
+      "no-const-assign": 2,
+      "no-unreachable": 2,
+      "no-unneeded-ternary": 0,
+      "max-params": [
+        0,
+        10
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {},
+      "postcss-pxtorem": {
+        "rootValue": 75,
+        "propList": [
+          "*"
+        ]
+      }
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
